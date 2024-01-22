@@ -4,8 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Movie App</title>
+    <style>
+      .loading {
+        -webkit-animation: sk-scaleout 1.5s infinite ease-in-out;
+        animation: sk-scaleout 1.5s infinite ease-in-out;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        /*border-radius: 100%;*/
+       
+      }
+      body{
+        background-color: black;
+      }
+      .gray{
+        color: gray;
+      }
+      .container {
+        font-weight:lighter;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #2563eb;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+        -webkit-animation: sk-scaleout 1.5s infinite ease-in-out;
+        animation: sk-scaleout 1.5s infinite ease-in-out;
+      }
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        100% {
+          -webkit-transform: scale(1);
+          opacity: 0.5;
+          transform: scale(1);
+        }
+        
+        
+      }
+    </style>
   </head>
   <body>
+    <div id="spinner" class="container">
+        <h1>Blum<span class="gray">House</span></h1>
+      </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
