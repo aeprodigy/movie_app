@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import {createContext, useContext, useEffect, useState} from "react";
 import { auth } from "../firebase";
