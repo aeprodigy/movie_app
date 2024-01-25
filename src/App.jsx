@@ -17,6 +17,7 @@ const App = () => {
   return (
     !loading && (
     <div className=''>
+    
       <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage/>}/>
